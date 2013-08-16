@@ -13,7 +13,6 @@ public class PlayerListener implements Listener {
 
 	@EventHandler (priority = EventPriority.HIGH)
 	public void onInteract(PlayerInteractEvent event) {
-
 		Player player = event.getPlayer();
 
 	    if (((event.getAction() == Action.RIGHT_CLICK_BLOCK) || (event.getAction() == Action.RIGHT_CLICK_AIR)) && (player.getItemInHand().getType() == Material.MUSHROOM_SOUP) && (player.getHealth() != 20.0) && (player.getHealth() + 1.0 <= 20.0)) {
@@ -22,7 +21,6 @@ public class PlayerListener implements Listener {
 	        player.getInventory().setItemInHand(new ItemStack(Material.BOWL, 1));
 
 	    }
-
 	}
 
 }

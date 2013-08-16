@@ -10,12 +10,10 @@ public class EasySoup extends JavaPlugin implements Listener {
 
 	@Override
 	public void onEnable() {
-
 		getServer().getLogger().info("EasySoup [v" + getDescription().getVersion() + "] has been enabled!");
 		getServer().getPluginManager().registerEvents(new PlayerListener(), this);
 
 		getCommand("soup").setExecutor(new SoupCommand());
-
 	}
 
 	@Override
